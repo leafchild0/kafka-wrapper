@@ -36,7 +36,9 @@ class DataParser
 
 		for (int i = 0; i < headers.size(); i++)
 		{
-			data.put(headers.get(i), p[i]);
+			String value = "";
+			if (p.length > i) value = p[i];
+			data.put(headers.get(i), value);
 		}
 
 		return data;
