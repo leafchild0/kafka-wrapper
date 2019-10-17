@@ -12,7 +12,6 @@
 	<artifactId>wrapper</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>wrapper</name>
-	<description>Small project on Spring and Kafka to parse and produce lots of medical fake data</description>
 
 	<properties>
 		<java.version>1.8</java.version>
