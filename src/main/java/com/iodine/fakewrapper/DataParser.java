@@ -39,7 +39,6 @@ class DataParser
 			data.put(headers.get(i), p[i]);
 		}
 
-		//more initialization goes here
 		return data;
 	};
 
@@ -71,37 +70,4 @@ class DataParser
 
 		return inputList;
 	}
-
-	private List<Map<String, String>> getDummyData()
-	{
-		List<Map<String, String>> dummy = new ArrayList<>();
-
-		Map<String, String> dummy1 = new HashMap<>();
-		dummy1.put("account_no", "D000086677");
-		dummy1.put("patient_id", "P000066496");
-		dummy1.put("order_service_id", "dicthp");
-		dummy1.put("order_service_name", "dicthp");
-		dummy1.put("observation_val1", "This patient has pretty severe sepsis and should be treated immediately");
-
-		Map<String, String> dummy2 = new HashMap<>();
-		dummy2.put("account_no", "D000086677");
-		dummy2.put("patient_id", "P000066496");
-		dummy2.put("order_service_id", "dicthp");
-		dummy2.put("order_service_name", "dicthp");
-		dummy2.put("observation_val1", "This patient has pretty severe blood decease and should be treated tomorrow");
-
-		HashMap<String, String> dummy3 = new HashMap<>();
-		dummy3.put("account_no", "D000086677");
-		dummy3.put("patient_id", "P000066496");
-		dummy3.put("order_service_id", "dicthp");
-		dummy3.put("order_service_name", "dicthp");
-		dummy3.put("observation_val1", "This patient has pretty severe HIV and should be treated immediately");
-
-		dummy.add(dummy1);
-		dummy.add(dummy2);
-		dummy.add(dummy3);
-
-		return dummy;
-	}
-
 }
